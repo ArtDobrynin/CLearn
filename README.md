@@ -1,6 +1,2 @@
 # CLearn
-# CLearn
-# CLearn
-# CLearn
-# CLearn
-# CLearn
+My learn C programming language 
