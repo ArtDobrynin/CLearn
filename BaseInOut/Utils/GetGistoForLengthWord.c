@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <locale.h>
 
 int main()
 {
@@ -24,7 +23,6 @@ int main()
         ++count;
     }
 
-    setlocale(LC_ALL, "Rus");
     printf("<=================Horizontal Gistogramm=================>\n");
     for(int i = 0; i < 10; ++i)
     {
