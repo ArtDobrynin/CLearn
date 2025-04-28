@@ -5,6 +5,7 @@
 #define TABUL 9
 #define NEXT 10
 
+//Здесь стоит явно сменить условие в цикле for в будущем ;)
 int specialSymbols[3] = { SPACE, TABUL, NEXT};
 
 bool CheckSymbols(char inputChar)

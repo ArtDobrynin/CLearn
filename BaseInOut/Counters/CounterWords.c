@@ -5,7 +5,10 @@
 
 int main()
 {
-    int c, nl, nw, nc, state;
+    int c, state;
+    int nl = 0;
+    int nw = 0;
+    int nc = 0;
 
     state = OUT;
     while((c = getchar()) != EOF)

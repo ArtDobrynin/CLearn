@@ -16,7 +16,7 @@ int main()
 
     while ((c = getchar()) != EOF)
     {
-        if (c != ' ' || c != '\n' || c != '\t')
+        if (c != ' ' && c != '\n' && c != '\t')
         {
             for (int i = 0; i < 10; ++i)
             {
@@ -28,7 +28,7 @@ int main()
                 }
             }
 
-            if (count == 0 && c != 32 && index != 10)
+            if (count == 0 && index != 10)
             {
                 codesLetter[index] = c;
                 ++countLetter[index];

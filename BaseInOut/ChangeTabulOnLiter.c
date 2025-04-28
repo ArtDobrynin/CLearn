@@ -4,7 +4,8 @@ int main()
 {
     int c, spec;
  
-    while((c = getchar()) != EOF){
+    while((c = getchar()) != EOF)
+    {
         spec = 0;
         if(c == '\t'){
             printf("\\t");
