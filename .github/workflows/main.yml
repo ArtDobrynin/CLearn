@@ -21,23 +21,23 @@ jobs:
       run: |
         mkdir -p bin
         
-        gcc "Chapter 1/Array/Ex/GetFrequencyLetters.c" -o bin/freq_letters
-        gcc "Chapter 1/Array/Ex/GetGistoForLengthWord.c" -o bin/gisto_words
-        gcc "Chapter 1/Array/Ex/GetGistoForLengthWordVertical.c" -o bin/gisto_words_v
-        gcc "Chapter 1/Array/CounterAllSymbols.c" -o bin/counter_all
-        gcc "Chapter 1/ArrayChars/Ex/GetStringMoreEighty.c" -o bin/string80
-        gcc "Chapter 1/ArrayChars/Ex/WordWithMaxLengthV1.1.c" -o bin/word_max_v1
-        gcc "Chapter 1/ArrayChars/WordWithMaxLength.c" -o bin/word_max
-        gcc "Chapter 1/CharInOut/Ex/GetValueEof.c" -o bin/get_eof
-        gcc "Chapter 1/CharInOut/GetCharich.c" -o bin/getcharich
-        gcc "Chapter 1/Counters/CounterChars/CounterCharchV1.c" -o bin/charch_v1
-        gcc "Chapter 1/Counters/CounterChars/CounterCharchV2.c" -o bin/charch_v2
-        gcc "Chapter 1/Counters/CounterStrings/Ex/ChangeDoubleSpace.c" -o bin/double_space
-        gcc "Chapter 1/Counters/CounterStrings/Ex/ChangeTabulOnLiter.c" -o bin/tab_to_lit
-        gcc "Chapter 1/Counters/CounterStrings/Ex/CounterSpecialSymbols.c" -o bin/counter_special
-        gcc "Chapter 1/Counters/CounterStrings/CounterString.c" -o bin/counter_string
-        gcc "Chapter 1/Counters/CounterWord/Ex/OutputWordFromText.c" -o bin/output_words
-        gcc "Chapter 1/Counters/CounterWord/CounterWords.c" -o bin/counter_words
-        gcc "Chapter 1/Functions/Ex/OptimizePower.c" -o bin/opt_power
-        gcc "Chapter 1/Functions/Power.c" -o bin/power
-        gcc "Chapter 1/VarAndArithmetic/Tamperature.c" -o bin/temp
+        gcc "ChapterOne/Array/Ex/GetFrequencyLetters.c" -o bin/freq_letters
+        gcc "ChapterOne/Array/Ex/GetGistoForLengthWord.c" -o bin/gisto_words
+        gcc "ChapterOne/Array/Ex/GetGistoForLengthWordVertical.c" -o bin/gisto_words_v
+        gcc "ChapterOne/Array/CounterAllSymbols.c" -o bin/counter_all
+        gcc "ChapterOne/ArrayChars/Ex/GetStringMoreEighty.c" -o bin/string80
+        gcc "ChapterOne/ArrayChars/Ex/WordWithMaxLengthV1.1.c" -o bin/word_max_v1
+        gcc "ChapterOne/ArrayChars/WordWithMaxLength.c" -o bin/word_max
+        gcc "ChapterOne/CharInOut/Ex/GetValueEof.c" -o bin/get_eof
+        gcc "ChapterOne/CharInOut/GetCharich.c" -o bin/getcharich
+        gcc "ChapterOne/Counters/CounterChars/CounterCharchV1.c" -o bin/charch_v1
+        gcc "ChapterOne/Counters/CounterChars/CounterCharchV2.c" -o bin/charch_v2
+        gcc "ChapterOne/Counters/CounterStrings/Ex/ChangeDoubleSpace.c" -o bin/double_space
+        gcc "ChapterOne/Counters/CounterStrings/Ex/ChangeTabulOnLiter.c" -o bin/tab_to_lit
+        gcc "ChapterOne/Counters/CounterStrings/Ex/CounterSpecialSymbols.c" -o bin/counter_special
+        gcc "ChapterOne/Counters/CounterStrings/CounterString.c" -o bin/counter_string
+        gcc "ChapterOne/Counters/CounterWord/Ex/OutputWordFromText.c" -o bin/output_words
+        gcc "ChapterOne/Counters/CounterWord/CounterWords.c" -o bin/counter_words
+        gcc "ChapterOne/Functions/Ex/OptimizePower.c" -o bin/opt_power
+        gcc "ChapterOne/Functions/Power.c" -o bin/power
+        gcc "ChapterOne/VarAndArithmetic/Tamperature.c" -o bin/temp
