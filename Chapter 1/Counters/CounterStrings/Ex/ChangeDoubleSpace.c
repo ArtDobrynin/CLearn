@@ -19,4 +19,6 @@ int main()
         }
         putchar(inputChar);
     }
+
+    return 0;
 }

@@ -1,28 +1,22 @@
 #include<stdio.h>
-#define MAXLINE 10
+#define MAXLINE 200
 
 int getFullline(char line[], int maxline);
 void copy(char to[], char from[]);
+void trim(char chars[], int len);
 
-int main ()
+void main ()
 {
     int len;
-    int max;
     char line[MAXLINE];
-    char longest[MAXLINE];
 
-    max = 0;
     while ((len = getFullline(line, MAXLINE)) > 0)
-        if (len > max)
-        {
-            max = len;
-            copy(longest, line);
-        }
+    {
+        trim(line, len);
 
-    if (max > 0)
-        printf("%s", longest);
-
-    return 0;
+        if (line[0] != '\0')
+            printf("%s", line);
+    }
 }
 
 int getFullline(char s[], int lim)
@@ -44,14 +38,22 @@ int getFullline(char s[], int lim)
         ++i;
     }
     s[i] = '\0';
+
     return i;
 }
 
-void copy (char to[], char from[])
+void trim(char chars[], int len)
 {
     int i;
-
-    i = 0;
-    while ((to[i] = from[i]) != '\0')
-        ++i;
+    for (i = len - 1; i >= 0; --i)
+    {
+        if (chars[i] == ' ' || chars[i] == '\t'|| chars[i] == '\n')
+        {
+            chars[i] = '\0';
+        }
+        else
+        {
+            break;
+        }
+    }
 }
