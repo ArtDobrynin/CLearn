@@ -5,7 +5,7 @@ int getFullline(char line[], int maxline);
 void copy(char to[], char from[]);
 void trim(char chars[], int len);
 
-void main ()
+int main ()
 {
     int len;
     char line[MAXLINE];
@@ -17,6 +17,8 @@ void main ()
         if (line[0] != '\0')
             printf("%s", line);
     }
+
+    return 0;
 }
 
 int getFullline(char s[], int lim)
