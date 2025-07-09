@@ -16,7 +16,7 @@ jobs:
     - name: Build program
       run: |
         mkdir -p bin
-        gcc -o bin/allSymbols "ChapterOne/Array/CounterAllSymbols.c"
+        gcc -o bin/allSymbols "../CounterAllSymbols.c"
 
     - name: Run tests
       run: |
