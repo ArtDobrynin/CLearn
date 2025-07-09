@@ -39,4 +39,6 @@ int main()
     }    
 
     printf("Count special chars: %d\n", countChar);
+
+    return 0;
 }

@@ -33,6 +33,8 @@ void new_version()
 int main()
 {
     new_version();
+
+    return 0;
 }
 
 

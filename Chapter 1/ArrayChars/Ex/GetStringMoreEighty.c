@@ -5,7 +5,7 @@
 int getFullline(char line[], int maxline);
 void copy(char to[], char from[]);
 
-void main ()
+int main ()
 {
     int len;
     int max;
@@ -22,6 +22,8 @@ void main ()
 
     if (max > POINT)
         printf("%s", longest);
+
+    return 0;
 }
 
 int getFullline(char s[], int lim)

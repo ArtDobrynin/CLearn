@@ -22,4 +22,6 @@ int main()
         if(spec == 0)
             putchar(c);
     }
+
+    return 0;
 }
