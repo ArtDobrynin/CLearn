@@ -1,0 +1,23 @@
+name: C Build and Test
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+    branches: ['**']
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Build program
+      run: |
+        mkdir -p bin
+        gcc -o bin/allSymbols Chapter 1/Array/CounterAllSymbols.c
+
+    - name: Run tests
+      run: |
+        bash "Chapter 1/Array/Tests/allSymbols_test.sh"
