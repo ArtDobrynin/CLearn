@@ -1,5 +1,5 @@
-name: C Build and Test
-
+name: C Build and Test for Chapter 1/Array
+ 
 on:
   push:
     branches: ['**']
@@ -16,7 +16,7 @@ jobs:
     - name: Build program
       run: |
         mkdir -p bin
-        gcc -o bin/allSymbols Chapter 1/Array/CounterAllSymbols.c
+        gcc -o bin/allSymbols "Chapter 1/Array/CounterAllSymbols.c"
 
     - name: Run tests
       run: |
