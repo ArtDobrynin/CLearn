@@ -1,0 +1,41 @@
+name: C Base Build
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install build tools
+      run: sudo apt-get update && sudo apt-get install -y build-essential
+
+    - name: Compile all programs
+      run: |
+        gcc "Chapter 1/Array/Ex/GetFrequencyLetters.c" -o freq_letters
+        gcc "Chapter 1/Array/Ex/GetGistoForLengthWord.c" -o gisto_words
+        gcc "Chapter 1/Array/Ex/GetGistoForLengthWordVertical.c" -o gisto_words_v
+        gcc "Chapter 1/Array/Ex/CounterAllSymbols.c" -o counter_all
+        gcc "Chapter 1/ArrayChars/Ex/GetStringMoreEighty.c" -o string80
+        gcc "Chapter 1/ArrayChars/Ex/WordWithMaxLengthV1.1.c" -o word_max_v1
+        gcc "Chapter 1/ArrayChars/Ex/WordWithMaxLength.c" -o word_max
+        gcc "Chapter 1/CharInOut/Ex/GetValueEof.c" -o get_eof
+        gcc "Chapter 1/CharInOut/Ex/GetCharich.c" -o getcharich
+        gcc "Chapter 1/Counters/CounterChars/CounterCharchV1.c" -o charch_v1
+        gcc "Chapter 1/Counters/CounterChars/CounterCharchV2.c" -o charch_v2
+        gcc "Chapter 1/Counters/CounterStrings/Ex/ChangeDoubleSpace.c" -o double_space
+        gcc "Chapter 1/Counters/CounterStrings/Ex/ChangeTabulOnLiter.c" -o tab_to_lit
+        gcc "Chapter 1/Counters/CounterStrings/Ex/CounterSpecialSymbols.c" -o counter_special
+        gcc "Chapter 1/Counters/CounterStrings/Ex/CounterString.c" -o counter_string
+        gcc "Chapter 1/Counters/CounterWord/Ex/OutputWordFromText.c" -o output_words
+        gcc "Chapter 1/Counters/CounterWord/Ex/CounterWords.c" -o counter_words
+        gcc "Chapter 1/Functions/Ex/OptimizePower.c" -o opt_power
+        gcc "Chapter 1/Functions/Ex/Power.c" -o power
+        gcc "Chapter 1/VarAndArithmetic/Tamperature.c" -o temp
