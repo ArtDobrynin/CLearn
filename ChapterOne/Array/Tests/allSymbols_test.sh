@@ -1,7 +1,11 @@
 #!/bin/bash
 
-mkdir -p ./bin 
-gcc -o ./bin/allSymbols ../CounterAllSymbols.c || { echo "❌ Compilation failed"; exit 1; }
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SRC_FILE="$SCRIPT_DIR/../CounterAllSymbols.c"
+BIN_DIR="$SCRIPT_DIR/../bin"
+
+mkdir -p "$BIN_DIR"
+gcc -o "$BIN_DIR/allSymbols" "$SRC_FILE" || { echo "❌ Compilation failed"; exit 1; }
 
 inputs=(
   "1234567890"
@@ -20,7 +24,7 @@ expected_outputs=(
 for i in "${!inputs[@]}"; do
   input="${inputs[$i]}"
   expected="${expected_outputs[$i]}"
-  output=$(echo -e "$input" | ./bin/allSymbols)
+  output=$(echo -e "$input" | "$BIN_DIR/allSymbols")
 
   if [ "$output" = "$expected" ]; then
     echo "Test $((i+1)) passed ✅"
